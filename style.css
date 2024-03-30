@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  ---Red: hsl(0, 100%, 74%);
+  ---Green: hsl(154, 59%, 51%);
+  ---Dark-Blue: hsl(249, 10%, 26%);
+  ---Grayish-Blue: hsl(246, 25%, 77%);
+  ---Blue: hsl(248, 32%, 49%);
+  ---White: hsl(0, 0%, 100%);
+  ---Font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/bg-intro-desktop.png), var(---Red);
+  height: 100vh;
+}
+.header h1 {
+  color: var(---White);
+  text-align: center;
+  font-size: 30px;
+}
+p {
+  font-size: 13px;
+}
+.form {
+  padding: 60px 40px;
+  width: 400px;
+}
+form {
+  background-color: var(---White);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px hsla(249, 10%, 26%, 0.2);
+}
+input {
+  display: block;
+  border: 1px solid var(---Dark-Blue);
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+input:focus {
+  border: 2px solid var(---Dark-Blue);
+}
+.input {
+  margin-bottom: 15px;
+  position: relative;
+}
+button {
+  border: none;
+  padding: 15px;
+  outline: none;
+  border-radius: 8px;
+  color: var(---White);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: var(---Green);
+  border-bottom: outset var(---Green);
+  width: 100%;
+}
+button:hover {
+  background-color: hsl(154, 90%, 68%);
+  border-bottom: outset hsl(154, 73%, 65%);
+}
+.btn {
+  background-color: var(---Blue);
+  border-bottom: outset var(---Blue);
+  padding: 10px;
+}
+.terms {
+  color: var(---Dark-Blue);
+  font-size: 10px;
+  margin-top: 10px;
+}
+.conditions {
+  color: var(---Red);
+  font-weight: 700;
+}
+.error-message {
+  color: var(---Red);
+  font-size: 10px;
+  font-style: italic;
+  text-align: end;
+  margin-top: 5px;
+}
+.icon-error {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+  height: 15px;
+}
+.all-errors {
+  display: none;
+}
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

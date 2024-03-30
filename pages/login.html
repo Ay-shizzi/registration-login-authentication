@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="form" id="form-container">
+        <div class="header">
+          <h1>LOGIN</h1>
+        </div>
+        <form action="get">
+          <div class="input">
+            <input type="text" placeholder="Email" id="email" />
+            <div id="email_error" class="all-errors">
+              <p class="error-message">This is not a valid Email</p>
+              <img class="icon-error" src="../images/icon-error.svg" alt="" />
+            </div>
+          </div>
+          <div class="input">
+            <input type="password" placeholder="Password" id="password" />
+            <div id="password_error" class="all-errors">
+              <p class="error-message">Password cannot be empty</p>
+              <img class="icon-error" src="../images/icon-error.svg" alt="" />
+            </div>
+          </div>
+          <button type="submit" id="login-btn" class="login-btn">Login</button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <span class="conditions">Terms and Services</span>
+          </p>
+          <p class="login-text">
+            if you dont have an account <a href="register.html">Register</a>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
